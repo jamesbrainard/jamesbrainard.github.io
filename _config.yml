@@ -36,20 +36,20 @@ sass:
 #ad-client:
 #ad-slot:
 #bing-verify:
-#email:
-twitter: username
-facebook: username
-github-url: username
+email: jamespbrainard@outlook.com
+#twitter: username
+#facebook: username
+github-url: jamesbrainard
 #stackoverflow: 123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin: username
+linkedin: jamesbrainard
 #xing: username
-instagram: username
+#instagram: username
 #lastfm: username
 #tumblr: username
-#medium: '@username'
+medium: '@james-brainard'
 #pinterest: username
 #foursquare: username
-steam: username
+#steam: username
 #dribbble: username
 #youtube: username
 #youtube-channel: channel
