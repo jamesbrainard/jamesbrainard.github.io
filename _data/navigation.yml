@@ -1,4 +1,16 @@
 # Site navigation links
 
+- title: CV
+  url: /cv/
+- title: About
+  url: /about/
+- title: Skills
+  url: /skills/
 - title: Projects
   url: /projects/
+- title: Research
+  url: /research/
+- title: Writing
+  url: /writing/
+- title: Business
+  url: /business/
