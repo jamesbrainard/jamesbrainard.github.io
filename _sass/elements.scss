@@ -150,6 +150,11 @@ hr {
 }
 
 // images and figures
+.small-icon {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
 img {
     display: block;
     max-width: 100%;
