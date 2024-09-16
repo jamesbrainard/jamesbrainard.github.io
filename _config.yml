@@ -9,7 +9,6 @@ background: "assets/img/background.gif"
 tiled_bg: false # Set this true if you want to tile your background image, otherwise it will be covered
 locale: en_US
 url: "https://jamesbrainard.github.io"
-baseurl: ""
 
 # Jekyll
 permalink: /:title/
