@@ -1,6 +1,6 @@
 ---
 layout: research-list
-title: All Projects
+title: All Research
 excerpt: "A List of Research"
 comments: false
 ---
