@@ -31,8 +31,6 @@ collections:
     output: true
   research:
     output: true
-  writing:
-    output: true
   business:
     output: true
 
@@ -57,7 +55,7 @@ linkedin: jamesbrainard
 #instagram: username
 #lastfm: username
 #tumblr: username
-medium: '@james-brainard'
+#medium: '@james-brainard'
 #pinterest: username
 #foursquare: username
 #steam: username
