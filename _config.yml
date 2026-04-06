@@ -31,8 +31,6 @@ collections:
     output: true
   research:
     output: true
-  business:
-    output: true
 
 # Comments
 
