@@ -185,9 +185,30 @@ The "random" in Random Forest refers to two sources of randomness:
 This randomness forces the trees to be different from each other, which is what makes the forest powerful.
 
 # Evaluation
+I was a bit surprised by the model underperforming compared to my expectations. I figured that with so many statistics to go off of, the model would be able to classify players at a very high rate.
 
+However, while the model wasn't the strongest, it certianly wasn't weak either. The Confusion Matrix below bears a sharper orange up the diagonal .45 than to the corners, but there's a good amount of error.
+
+![Confusion matrix showing aggregated predictions vs actual predictions for 2023-2024 season](/assets/img/post_images/nba-position-results-1.png)
+
+Aside from just accuracy (whether the model got a pick right or wrong), we can also measure how *far off* the model was on average. Treating basketball positions as ordinal categorical data points, we can use the Quadratic Weighted Kappa (QWK) to measure how far off the model was on average.
+
+- Mean Model Accuracy: 46.69%
+- Mean Quadratic Weighted Kappa: 0.7057
+
+We can also look at which variables the model decided was most important to guessing which position a player played. There are some interesting results - rebound-related statistics make up 5/10 of the most important variables, whereas shooting-related statistics only make up 4/10.
+
+The data certainly seems to suggest a somewhat "positionless" game, but there's an even better way to check.
 
 # 20-Year Comparison
 
-# Reflection?
-Could've added a minutes requirement
+When the exact same analysis is run on data from 2003-2004, the new model actually performs better - meaning it's better at predicting which position a player plays based on their stats.
+
+![Confusion matrix showing aggregated predictions vs actual predictions for 2003-2004 season](/assets/img/post_images/nba-position-results-3.png)
+
+# Conclusion & App
+This analysis actually lends a lot of credit to the idea that basketball *has* become more positionless over the years - if it's more difficult to guess a player's position now than 20 years ago, it means that more players are being asked to play roles typically filled by other positions.
+
+I could have (probably should have) added a minutes requirement, since some players with few minutes but high per-36 and per-100-possessions stats probably skew the model.
+
+The analysis above is also available as a Shiny app, which you can access at this link to perform the analysis yourself: [NBA Player Analysis and Bootstrapping](https://93q1q1-james0brainard.shinyapps.io/nba-position-classifier/)
